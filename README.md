@@ -1,21 +1,3 @@
-#About
-This is an localhosted ollama fastapi server that works on your computer using the local cpu and gpu for the computation and answering.
-
-@How it works?
-In order to make it work first you need to have a running server of any local hosted ollama using the command.
-```bash
-ollama run llama3.2:XX
-```
-After having a running server run the fastapi request using the command.
-```bash
-uvicorn main:app --reload
-```
-In this you get server ready on the ```http://127.0.0.1:8000``` or on the ```http://localhost:11434```.
-
-#Why building it?
-We have implemented the /POST request and GET /health request using the local hosted model.
-Which provide us a health check through status as 'OK' on the page itself.
-We also can see the message responnse of the model using the local host model under the /POST tab on the page ```http://127.0.0.1:8000/docs``` and on expanding it you get the try it out button after that use execute.
 # Ollama FastAPI Server
 
 A small FastAPI service that sits in front of a locally running Ollama model.
